@@ -9,6 +9,7 @@ class pageTwo extends StatefulWidget {
 
 class _pageTwoState extends State<pageTwo> {
   List<String> names = [
+    "noman",
     "abdullah",
     "zeeshan",
     "amir",
