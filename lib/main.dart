@@ -17,12 +17,24 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: "FlutterPractice",
       theme: ThemeData(
-        primarySwatch: Colors.green,
-        useMaterial3: false,
+          primarySwatch: Colors.green,
+          useMaterial3: false,
+          textTheme: TextTheme(
+            bodyMedium: TextStyle(
+                fontSize: 22, fontWeight: FontWeight.w900, color: Colors.black),
+            bodySmall: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.w900,
+                color: Colors.red.shade400),
+            bodyLarge: TextStyle(
+                fontSize: 25,
+                fontWeight: FontWeight.w900,
+                color: Colors.red.shade900),
+          )
 
-        // colorSchemeSeed: Colors.pink,
-        // useMaterial3: false,
-      ),
+          // colorSchemeSeed: Colors.pink,
+          // useMaterial3: false,
+          ),
       // primarySwatch: Colors.purple, useMaterial3: false),
       home: const pageThree(),
     );

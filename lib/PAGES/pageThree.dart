@@ -106,11 +106,6 @@ class _pageThreeState extends State<pageThree> {
       appBar: AppBar(
         title: Text("Abdullah WhatsApp"),
         elevation: 5,
-        actions: [
-          Column(
-            children: [Text("data")],
-          )
-        ],
       ),
 
       body: Container(
@@ -130,11 +125,11 @@ class _pageThreeState extends State<pageThree> {
               ),
               title: Text(
                 names[index],
-                style: TextStyle(fontWeight: FontWeight.w900),
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
               subtitle: Text(
                 "03317012500",
-                style: TextStyle(fontWeight: FontWeight.w900),
+                style: Theme.of(context).textTheme.bodySmall,
               ),
               trailing: Container(
                 // color: Colors.yellow,
