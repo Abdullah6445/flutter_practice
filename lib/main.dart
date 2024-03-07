@@ -17,14 +17,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: "FlutterPractice",
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.green,
         useMaterial3: false,
 
         // colorSchemeSeed: Colors.pink,
         // useMaterial3: false,
       ),
       // primarySwatch: Colors.purple, useMaterial3: false),
-      home: const pageOne(),
+      home: const pageThree(),
     );
   }
 }

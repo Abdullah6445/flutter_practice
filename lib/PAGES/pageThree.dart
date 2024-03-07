@@ -8,6 +8,19 @@ class pageThree extends StatefulWidget {
 }
 
 class _pageThreeState extends State<pageThree> {
+  List<String> names = [
+    "noman",
+    "abdullah",
+    "zeeshan",
+    "amir",
+    "ammar",
+    "hasnat",
+    "abdullah",
+    "zeeshan",
+    "amir",
+    "ammar",
+    "hasnat"
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -91,7 +104,7 @@ class _pageThreeState extends State<pageThree> {
         ),
       ),
       appBar: AppBar(
-        title: Text("page 3 flutter practice"),
+        title: Text("Abdullah WhatsApp"),
         elevation: 5,
         actions: [
           Column(
@@ -99,17 +112,60 @@ class _pageThreeState extends State<pageThree> {
           )
         ],
       ),
+
       body: Container(
-        // color: Colors.grey.shade300,
         decoration: BoxDecoration(
-          // color: Colors.red,
           image: DecorationImage(
-            opacity: 0.3,
-            scale: 2,
+            scale: 3,
+            opacity: 0.1,
             image: AssetImage("assets/images/whatssapp.png"),
           ),
         ),
+        height: MediaQuery.of(context).size.height * (1),
+        child: ListView.builder(
+          itemBuilder: (context, index) {
+            return ListTile(
+              leading: CircleAvatar(
+                child: Image.asset("assets/images/img.png"),
+              ),
+              title: Text(
+                names[index],
+                style: TextStyle(fontWeight: FontWeight.w900),
+              ),
+              subtitle: Text(
+                "03317012500",
+                style: TextStyle(fontWeight: FontWeight.w900),
+              ),
+              trailing: Container(
+                // color: Colors.yellow,
+                width: MediaQuery.of(context).size.width * (.25),
+                child: Expanded(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Icon(Icons.call),
+                      Icon(Icons.mail_outline_outlined),
+                      Icon(Icons.camera_alt),
+                    ],
+                  ),
+                ),
+              ),
+            );
+          },
+          itemCount: names.length,
+        ),
       ),
+      // Container(
+      //   // color: Colors.grey.shade300,
+      //   decoration: BoxDecoration(
+      //     // color: Colors.red,
+      //     image: DecorationImage(
+      //       opacity: 0.3,
+      //       scale: 2,
+      //       image: AssetImage("assets/images/whatssapp.png"),
+      //     ),
+      //   ),
+      // ),
     );
   }
 }
