@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_practice/PAGES/pageOne.dart';
-import 'package:flutter_practice/PAGES/pageThree.dart';
+import 'package:flutter_practice/PAGES/pageFour.dart';
 // import 'package:flutter_practice/PAGES/pageOne.dart';
-import 'package:flutter_practice/PAGES/pageTwo.dart';
+// import 'package:flutter_practice/PAGES/pageThree.dart';
+// import 'package:flutter_practice/PAGES/pageOne.dart';
+// import 'package:flutter_practice/PAGES/pageTwo.dart';
 
 void main() {
   runApp(const MyApp());
@@ -36,7 +37,7 @@ class MyApp extends StatelessWidget {
           // useMaterial3: false,
           ),
       // primarySwatch: Colors.purple, useMaterial3: false),
-      home: const pageThree(),
+      home: const pageFour(),
     );
   }
 }
