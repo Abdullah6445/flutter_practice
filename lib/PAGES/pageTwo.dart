@@ -43,7 +43,20 @@ class _pageTwoState extends State<pageTwo> {
                   "03317012500",
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
-                trailing: Icon(Icons.call),
+                trailing: Container(
+                  // color: Colors.yellow,
+                  width: MediaQuery.of(context).size.width * (.25),
+                  child: Expanded(
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Icon(Icons.call),
+                        Icon(Icons.mail_outline_outlined),
+                        Icon(Icons.camera_alt),
+                      ],
+                    ),
+                  ),
+                ),
               );
             },
             itemCount: names.length,
@@ -53,7 +66,7 @@ class _pageTwoState extends State<pageTwo> {
           height: MediaQuery.of(context).size.height * (.3),
           child: ListView.separated(
               itemBuilder: (context, index) {
-                return Text(names[index]);
+                return Center(child: Text(names[index]));
               },
               separatorBuilder: (context, index) {
                 return Divider(
@@ -61,6 +74,32 @@ class _pageTwoState extends State<pageTwo> {
                 );
               },
               itemCount: names.length),
+        ),
+        Container(
+          height: MediaQuery.of(context).size.height * (.05),
+          color: Colors.amberAccent,
+          child: Row(
+            children: [
+              Container(
+                width: MediaQuery.of(context).size.width * (.2),
+                color: Colors.green,
+              ),
+              Expanded(
+                child: Container(
+                  width: MediaQuery.of(context).size.width * (.2),
+                  color: Colors.black,
+                ),
+              ),
+              Container(
+                width: MediaQuery.of(context).size.width * (.2),
+                color: Colors.blue,
+              ),
+              Container(
+                width: MediaQuery.of(context).size.width * (.2),
+                color: Colors.pink,
+              ),
+            ],
+          ),
         ),
       ]),
     );
