@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_practice/PAGES/pageOne.dart';
+// import 'package:flutter_practice/PAGES/pageOne.dart';
 import 'package:flutter_practice/PAGES/pageTwo.dart';
 
 void main() {
@@ -14,7 +14,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         title: "FlutterPractice",
-        debugShowCheckedModeBanner: true,
         theme: ThemeData(
           primarySwatch: Colors.blue,
           useMaterial3: false,
