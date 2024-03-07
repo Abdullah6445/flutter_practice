@@ -27,6 +27,7 @@ class _pageFourState extends State<pageFour> {
           itemBuilder: (context, index) {
             return Card(
                 elevation: 10,
+                shadowColor: Colors.black,
                 color: Colors.green.shade500,
                 child: ListTile(
                     leading: Icon(
