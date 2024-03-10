@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 // import 'package:flutter_practice/PAGES/pageFive.dart';
-import 'package:flutter_practice/mainpage.dart';
+import 'package:flutter_practice/PAGES/mainpage.dart';
 // import 'package:flutter_practice/pageSix.dart';
 // import 'package:flutter_practice/PAGES/pageFour.dart';
 // import 'package:flutter_practice/PAGES/pageOne.dart';
