@@ -1,3 +1,5 @@
+// ignore_for_file: file_names, camel_case_types, prefer_const_constructors, duplicate_ignore
+
 import 'package:flutter/material.dart';
 
 class pageFive extends StatefulWidget {
