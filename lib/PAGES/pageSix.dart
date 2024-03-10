@@ -13,16 +13,6 @@ class _pageSixState extends State<pageSix> {
     "Talha",
     "Maaz",
     "Zeeshan",
-    "Talha",
-    "Maaz",
-    "Zeeshan",
-    "Abdullah",
-    "Talha",
-    "Maaz",
-    "Zeeshan",
-    "Talha",
-    "Maaz",
-    "Zeeshan",
   ];
 
   @override

@@ -1,8 +1,9 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:flutter_practice/PAGES/pageFive.dart';
-import 'package:flutter_practice/pageSix.dart';
+// import 'package:flutter_practice/PAGES/pageFive.dart';
+import 'package:flutter_practice/mainpage.dart';
+// import 'package:flutter_practice/pageSix.dart';
 // import 'package:flutter_practice/PAGES/pageFour.dart';
 // import 'package:flutter_practice/PAGES/pageOne.dart';
 // import 'package:flutter_practice/PAGES/pageThree.dart';
@@ -40,7 +41,7 @@ class MyApp extends StatelessWidget {
         // colorSchemeSeed: Colors.pink,
         // useMaterial3: false,
       ),
-      home: pageSix(),
+      home: mainPage(),
     );
   }
 }
