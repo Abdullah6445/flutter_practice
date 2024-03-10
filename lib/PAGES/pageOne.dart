@@ -101,7 +101,7 @@ class _pageOneState extends State<pageOne> {
                         ),
                       ],
                     ),
-                    child: Center(child: Text("design container")),
+                    child: Text("design container"),
                   ),
                   Padding(
                     padding: const EdgeInsets.only(top: 15),
