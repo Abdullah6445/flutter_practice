@@ -1,3 +1,5 @@
+// ignore_for_file: file_names, camel_case_types, sized_box_for_whitespace, prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 class pageSix extends StatefulWidget {
