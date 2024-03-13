@@ -8,6 +8,7 @@ import 'package:flutter_practice/PAGES/pageSix.dart';
 import 'package:flutter_practice/PAGES/pageThree.dart';
 import 'package:flutter_practice/PAGES/pageTwo.dart';
 import 'package:flutter_practice/customWidgets/customCircularButton.dart';
+import 'package:flutter_practice/customWidgets/customDrawer.dart';
 
 class mainPage extends StatefulWidget {
   const mainPage({super.key});
@@ -20,81 +21,7 @@ class _mainPageState extends State<mainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: Drawer(
-        child: Column(
-          children: [
-            DrawerHeader(
-              padding: EdgeInsets.zero,
-              child: UserAccountsDrawerHeader(
-                currentAccountPicture:
-                    Image(image: AssetImage("assets/images/whatssapp.png")),
-                accountName: Text(
-                  "Abdullah",
-                  style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.w900,
-                      fontStyle: FontStyle.italic),
-                ),
-                accountEmail: Text(
-                  "abdullahiftikhar6445@gmail.com",
-                  style: TextStyle(
-                      fontSize: 17,
-                      fontWeight: FontWeight.w700,
-                      fontStyle: FontStyle.italic),
-                ),
-              ),
-            ),
-            ListTile(
-              onTap: () {},
-              leading: Icon(Icons.settings, size: 30, color: Colors.black),
-              title: Text(
-                "Settings",
-                style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.w500,
-                    fontStyle: FontStyle.italic),
-              ),
-            ),
-            ListTile(
-              onTap: () {},
-              leading: Icon(Icons.account_balance_outlined,
-                  size: 30, color: Colors.black),
-              title: Text(
-                "About",
-                style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.w500,
-                    fontStyle: FontStyle.italic),
-              ),
-            ),
-            ListTile(
-              onTap: () {},
-              leading: Icon(Icons.contact_phone_outlined,
-                  size: 30, color: Colors.black),
-              title: Text(
-                "Contact Us",
-                style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.w500,
-                    fontStyle: FontStyle.italic),
-              ),
-            ),
-            Divider(thickness: 2, color: Colors.blue),
-            ListTile(
-              onTap: () {},
-              leading: Icon(Icons.help_center_outlined,
-                  size: 30, color: Colors.black),
-              title: Text(
-                "Help",
-                style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.w500,
-                    fontStyle: FontStyle.italic),
-              ),
-            ),
-          ],
-        ),
-      ),
+      drawer: customDrawer(),
       appBar: AppBar(
         title: Text("This is main page"),
         // leading: Icon(Icons.flutter_dash),
