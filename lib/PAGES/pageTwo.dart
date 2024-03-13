@@ -47,17 +47,14 @@ class _pageTwoState extends State<pageTwo> {
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
                 trailing: Container(
-                  // color: Colors.yellow,
-                  width: MediaQuery.of(context).size.width * (.25),
-                  child: Expanded(
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        Icon(Icons.call),
-                        Icon(Icons.mail_outline_outlined),
-                        Icon(Icons.camera_alt),
-                      ],
-                    ),
+                  width: MediaQuery.of(context).size.width * (.30),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Icon(Icons.call),
+                      Icon(Icons.mail_outline_outlined),
+                      Icon(Icons.camera_alt),
+                    ],
                   ),
                 ),
               );
@@ -66,7 +63,7 @@ class _pageTwoState extends State<pageTwo> {
           ),
         ),
         Container(
-          height: MediaQuery.of(context).size.height * (.3),
+          height: MediaQuery.of(context).size.height * (.5),
           child: ListView.separated(
               itemBuilder: (context, index) {
                 return Center(child: Text(names[index]));

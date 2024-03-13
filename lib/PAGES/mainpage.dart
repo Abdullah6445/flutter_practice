@@ -68,14 +68,12 @@ class _mainPageState extends State<mainPage> {
               onTap: () {},
               leading: Icon(Icons.contact_phone_outlined,
                   size: 30, color: Colors.black),
-              title: Expanded(
-                child: Text(
-                  "Contact Us",
-                  style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.w500,
-                      fontStyle: FontStyle.italic),
-                ),
+              title: Text(
+                "Contact Us",
+                style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.w500,
+                    fontStyle: FontStyle.italic),
               ),
             ),
             Divider(thickness: 2, color: Colors.blue),
@@ -83,14 +81,12 @@ class _mainPageState extends State<mainPage> {
               onTap: () {},
               leading: Icon(Icons.help_center_outlined,
                   size: 30, color: Colors.black),
-              title: Expanded(
-                child: Text(
-                  "Help",
-                  style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.w500,
-                      fontStyle: FontStyle.italic),
-                ),
+              title: Text(
+                "Help",
+                style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.w500,
+                    fontStyle: FontStyle.italic),
               ),
             ),
           ],
