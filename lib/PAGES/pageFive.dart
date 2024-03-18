@@ -1,6 +1,7 @@
 // ignore_for_file: file_names, camel_case_types, prefer_const_constructors, duplicate_ignore
 
 import 'package:flutter/material.dart';
+import 'package:flutter_practice/customWidgets/customAppbar.dart';
 
 class pageFive extends StatefulWidget {
   const pageFive({super.key});
@@ -13,10 +14,11 @@ class _pageFiveState extends State<pageFive> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.red.shade600,
-        title: Text("page fiveAGES/pageFive.dart"),
-      ),
+      appBar: customAppbar(titleText: "This is Page 5"),
+      // appBar: AppBar(
+      //   backgroundColor: Colors.red.shade600,
+      //   title: Text("page fiveAGES/pageFive.dart"),
+      // ),
       // ignore: prefer_const_constructors
       body: Container(
         color: Colors.red.shade300,

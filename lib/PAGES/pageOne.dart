@@ -1,6 +1,7 @@
 // ignore_for_file: file_names, camel_case_types, prefer_const_constructors, prefer_const_literals_to_create_immutables, sized_box_for_whitespace, avoid_print
 
 import 'package:flutter/material.dart';
+import 'package:flutter_practice/customWidgets/customAppbar.dart';
 
 class pageOne extends StatefulWidget {
   const pageOne({super.key});
@@ -13,7 +14,7 @@ class _pageOneState extends State<pageOne> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Flutter Ui")),
+      appBar: customAppbar(titleText: "This is Page 1"),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Container(

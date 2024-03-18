@@ -1,6 +1,7 @@
 // ignore_for_file: file_names, camel_case_types, prefer_const_constructors, sized_box_for_whitespace, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+import 'package:flutter_practice/customWidgets/customAppbar.dart';
 
 class pageThree extends StatefulWidget {
   const pageThree({super.key});
@@ -26,10 +27,12 @@ class _pageThreeState extends State<pageThree> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Abdullah WhatsApp"),
-        elevation: 5,
-      ),
+      // appBar: AppBar(
+      //   title: Text("Abdullah WhatsApp"),
+      //   elevation: 5,
+      // ),
+
+      appBar: customAppbar(titleText: "This is Page 3"),
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(

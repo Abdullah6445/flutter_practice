@@ -1,6 +1,7 @@
 // ignore_for_file: file_names, camel_case_types, prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:flutter_practice/customWidgets/customAppbar.dart';
 
 class pageFour extends StatefulWidget {
   const pageFour({super.key});
@@ -13,10 +14,12 @@ class _pageFourState extends State<pageFour> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("PageFour card"),
-        // clipBehavior: null,
-      ),
+      // appBar: AppBar(
+      //   title: Text("PageFour card"),
+      //   // clipBehavior: null,
+      // ),
+
+      appBar: customAppbar(titleText: "This is Page 4"),
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(

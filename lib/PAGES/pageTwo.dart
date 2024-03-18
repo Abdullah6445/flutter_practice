@@ -1,6 +1,7 @@
 // ignore_for_file: file_names, camel_case_types, prefer_const_constructors, sized_box_for_whitespace, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+import 'package:flutter_practice/customWidgets/customAppbar.dart';
 
 class pageTwo extends StatefulWidget {
   const pageTwo({super.key});
@@ -26,9 +27,11 @@ class _pageTwoState extends State<pageTwo> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("page 2 flutter practice"),
-      ),
+      // appBar: AppBar(
+      //   title: Text("page 2 flutter practice"),
+      // ),
+
+      appBar: customAppbar(titleText: "This is Page 2"),
       body: Column(children: [
         Container(
           height: MediaQuery.of(context).size.height * (.3),

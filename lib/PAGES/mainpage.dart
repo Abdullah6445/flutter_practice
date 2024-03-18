@@ -1,12 +1,7 @@
 // ignore_for_file: camel_case_types, prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:flutter_practice/PAGES/pageFive.dart';
-import 'package:flutter_practice/PAGES/pageFour.dart';
-import 'package:flutter_practice/PAGES/pageOne.dart';
-import 'package:flutter_practice/PAGES/pageSix.dart';
-import 'package:flutter_practice/PAGES/pageThree.dart';
-import 'package:flutter_practice/PAGES/pageTwo.dart';
+import 'package:flutter_practice/customWidgets/customAppbar.dart';
 import 'package:flutter_practice/customWidgets/customCircularButton.dart';
 import 'package:flutter_practice/customWidgets/customDrawer.dart';
 
@@ -22,94 +17,7 @@ class _mainPageState extends State<mainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: customDrawer(),
-      appBar: AppBar(
-        title: Text("This is main page"),
-        // leading: Icon(Icons.flutter_dash),
-        actions: [
-          PopupMenuButton(
-            itemBuilder: (context) => [
-              PopupMenuItem(
-                onTap: () {
-                  Navigator.push(context, MaterialPageRoute(
-                    builder: (context) {
-                      return pageOne();
-                    },
-                  ));
-                },
-                child: ListTile(
-                  leading: Icon(Icons.looks_one_outlined),
-                  title: Text("Page one"),
-                ),
-              ),
-              PopupMenuItem(
-                onTap: () {
-                  Navigator.push(context, MaterialPageRoute(
-                    builder: (context) {
-                      return pageTwo();
-                    },
-                  ));
-                },
-                child: ListTile(
-                  leading: Icon(Icons.looks_two_outlined),
-                  title: Text("Page two"),
-                ),
-              ),
-              PopupMenuItem(
-                onTap: () {
-                  Navigator.push(context, MaterialPageRoute(
-                    builder: (context) {
-                      return pageThree();
-                    },
-                  ));
-                },
-                child: ListTile(
-                  leading: Icon(Icons.looks_3_outlined),
-                  title: Text("Page three"),
-                ),
-              ),
-              PopupMenuItem(
-                onTap: () {
-                  Navigator.push(context, MaterialPageRoute(
-                    builder: (context) {
-                      return pageFour();
-                    },
-                  ));
-                },
-                child: ListTile(
-                  leading: Icon(Icons.looks_4_outlined),
-                  title: Text("Page four"),
-                ),
-              ),
-              PopupMenuItem(
-                onTap: () {
-                  Navigator.push(context, MaterialPageRoute(
-                    builder: (context) {
-                      return pageFive();
-                    },
-                  ));
-                },
-                child: ListTile(
-                  leading: Icon(Icons.looks_5_outlined),
-                  title: Text("Page five"),
-                ),
-              ),
-              PopupMenuItem(
-                onTap: () {
-                  Navigator.push(context, MaterialPageRoute(
-                    builder: (context) {
-                      return pageSix();
-                    },
-                  ));
-                },
-                child: ListTile(
-                  leading: Icon(Icons.looks_6_outlined),
-                  title: Text("Page six"),
-                ),
-              ),
-            ],
-          ),
-        ],
-      ),
+      appBar: customAppbar(titleText: "This is custom appbar"),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(20.0),
